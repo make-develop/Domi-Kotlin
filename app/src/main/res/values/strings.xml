@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Domi-Kotlin</string>
+
+        <string name = "FACEBOOK_APP_ID">4542129965318302</string>
+        <string name="ACCOUNT_KIT_CLIENT_TOKEN">[ACCOUNT_KIT_CLIENT_TOKEN]</string>
+
 </resources>
