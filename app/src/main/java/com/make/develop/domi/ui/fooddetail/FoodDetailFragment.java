@@ -35,6 +35,7 @@ import com.make.develop.domi.Common.Common;
 import com.make.develop.domi.Model.CommentModel;
 import com.make.develop.domi.Model.FoodModel;
 import com.make.develop.domi.R;
+import com.make.develop.domi.ui.comments.CommentFragment;
 
 import org.w3c.dom.Comment;
 
@@ -78,6 +79,12 @@ public class FoodDetailFragment extends Fragment {
       void onRatingButtonClick()
       {
         showDialogRating();
+      }
+
+      @OnClick(R.id.btnShowComment)
+      void onShowCommentButtonClick(){
+          CommentFragment commentFragment = CommentFragment.getInstance();
+          commentFragment.show(getActivity().getSupportFragmentManager(), "CommentFragment");
       }
 
     private void showDialogRating() {
