@@ -56,6 +56,7 @@ public class MyFoodListAdapter extends RecyclerView.Adapter<MyFoodListAdapter.My
             @Override
             public void onItemClickListener(View view, int pos) {
                 Common.selectedFood = foodModelList.get(pos);
+                Common.selectedFood.setKey(String.valueOf(pos));
                 EventBus.getDefault().postSticky(new FoodItemClick(true, foodModelList.get(pos)));
             }
         });
